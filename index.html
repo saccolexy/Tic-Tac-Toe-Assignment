@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Simple styling for the game grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 5px;
+      }
+      .cell {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 id="status">X's Turn</h1>
+      <div class="grid" id="grid">
+        <!-- Grid cells will be generated here -->
+      </div>
+      <button class="btn btn-primary mt-3" id="resetButton">
+        Restart Game
+      </button>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
